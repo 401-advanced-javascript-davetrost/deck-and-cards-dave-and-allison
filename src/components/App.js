@@ -2,12 +2,17 @@ import React from 'react';
 import { characters, gifs } from '../content.json';
 import DeckOfComps from '../containers/DeckOfComps';
 import Card from './Card';
+import Characters from '../containers/Characters';
 import Deck from '../containers/Deck';
 
 export default function App() {
   return (
     <>
-      <DeckOfComps
+      <Characters
+        count={5}
+      />
+
+      {/* <DeckOfComps
         title="Characters"
         items={characters.map(character => ({ 
           ...character, 
@@ -44,7 +49,7 @@ export default function App() {
             image={image}
           />
         ))}
-      </Deck>
+      </Deck> */}
     </>
   );
 }
