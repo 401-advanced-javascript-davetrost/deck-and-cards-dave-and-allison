@@ -1,9 +1,9 @@
 import React from 'react';
-import { characters, gifs } from '../content.json';
-import DeckOfComps from '../containers/DeckOfComps';
-import Card from './Card';
+// import { characters, gifs } from '../content.json';
+// import DeckOfComps from '../containers/DeckOfComps';
+// import Card from './Card';
+// import Deck from '../containers/Deck';
 import Characters from '../containers/Characters';
-import Deck from '../containers/Deck';
 import Gifs from '../containers/Gifs';
 
 export default function App() {

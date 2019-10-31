@@ -15,3 +15,17 @@ exports[`Deck component renders 1`] = `
   </p>
 </section>
 `;
+
+exports[`Deck component renders without a title 1`] = `
+<section>
+  <header>
+    <h2 />
+  </header>
+  <p>
+    card 1
+  </p>
+  <p>
+    card 2
+  </p>
+</section>
+`;

@@ -12,4 +12,14 @@ describe('Deck component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders without a title', () => {
+    const wrapper = shallow(
+      <Deck>
+        <p>card 1</p>
+        <p>card 2</p>
+      </Deck>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });
