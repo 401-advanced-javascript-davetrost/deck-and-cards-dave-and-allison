@@ -7,12 +7,12 @@ const Card = ({ title, image, content }) => (
     <figure>
       <img src={image} alt={title} />
     </figure>
-    {content}
+    {content && <p>{content}</p>}
   </div>
 );
 
 Card.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   content: PropTypes.string
 };

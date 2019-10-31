@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 export default class DeckOfComps extends Component {
 
   render() {
-    console.log(this.props.Component);
     const elements = this.props.items.map((item, i) => (
       <this.props.Component
         key={item._id || i}
@@ -24,6 +23,6 @@ export default class DeckOfComps extends Component {
   static propTypes = {
     title: PropTypes.string,
     items: PropTypes.arrayOf(PropTypes.object).isRequired,
-    Component: PropTypes.func.isRequired
+    Component: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
   };
 }
