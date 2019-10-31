@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({ _id, title, image, content }) => (
-  <div key={_id}>
+const Card = ({ title, image, content }) => (
+  <div>
     <header><h3>{title}</h3></header>
     <figure>
       <img src={image} alt={title} />
@@ -12,8 +12,7 @@ const Card = ({ _id, title, image, content }) => (
 );
 
 Card.propTypes = {
-  _id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   image: PropTypes.string.isRequired,
   content: PropTypes.string
 };

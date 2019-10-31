@@ -1,12 +1,17 @@
 import React from 'react';
 import { characters, gifs } from '../content.json';
-import Deck from '../containers/Deck';
+import DeckOfComps from '../containers/DeckOfComps';
 import Card from './Card';
 
 export default function App() {
   return (
     <>
-      <Deck title="Characters">
+      <DeckOfComps
+        title="Characters"
+        items={characters}
+        Component={Card}
+      />
+      {/* <Deck title="Characters">
         {characters.map(({ _id, name, image }) => (
           <Card 
             key={_id} 
@@ -25,7 +30,7 @@ export default function App() {
             image={image}
           />
         ))}
-      </Deck>
+      </Deck> */}
     </>
   );
 }
