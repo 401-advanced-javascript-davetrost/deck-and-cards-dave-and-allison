@@ -22,7 +22,8 @@ export default class Gifs extends Component {
         title="GIFs"
         items={this.state.gifs.map(gif => ({ 
           ...gif, 
-          title: gif._id
+          title: gif._id,
+          image: gif.gifLink
         }))}
         Component={Card}
       />
