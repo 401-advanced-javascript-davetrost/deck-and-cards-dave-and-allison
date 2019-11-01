@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeckOfComps component renders 1`] = `
+<section>
+  <header>
+    <h2>
+      Test Title
+    </h2>
+  </header>
+  <Card
+    content="this is a test"
+    image="test image"
+    key="0"
+    title="Test Title"
+  />
+  <Card
+    content="this is a test"
+    image="test image"
+    key="1"
+    title="Test Title"
+  />
+</section>
+`;

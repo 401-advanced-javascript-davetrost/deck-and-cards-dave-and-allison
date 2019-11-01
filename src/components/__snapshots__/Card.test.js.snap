@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders with content 1`] = `
+<div>
+  <header>
+    <h3>
+      Test Title
+    </h3>
+  </header>
+  <figure>
+    <img
+      alt="Test Title"
+      src="test image"
+    />
+  </figure>
+  <p>
+    this is a test
+  </p>
+</div>
+`;
+
+exports[`Card component renders without content 1`] = `
+<div>
+  <header>
+    <h3>
+      Test Title
+    </h3>
+  </header>
+  <figure>
+    <img
+      alt="Test Title"
+      src="test image"
+    />
+  </figure>
+</div>
+`;

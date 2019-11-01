@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<Fragment>
+  <Characters
+    count={5}
+  />
+  <Gifs
+    count={2}
+  />
+</Fragment>
+`;
